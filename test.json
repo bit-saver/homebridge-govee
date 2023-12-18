@@ -1,5 +1,5 @@
 {
-  "extra1": {
+  "extra": {
     "title": "Extra 1",
     "type": "object",
     "properties": {
@@ -38,12 +38,12 @@
           }
         ],
         "condition": {
-          "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extra1 && (model.lightDevices[arrayIndices].extra1.sceneCode || model.lightDevices[arrayIndices].extra1.bleCode));"
+          "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extra && (model.lightDevices[arrayIndices].extra.sceneCode || model.lightDevices[arrayIndices].extra.bleCode));"
         }
       }
     }
   },
-  "extra2": {
+  "extraTwo": {
     "title": "Extra 2",
     "type": "object",
     "properties": {
@@ -82,12 +82,12 @@
           }
         ],
         "condition": {
-          "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extra2 && (model.lightDevices[arrayIndices].extra2.sceneCode || model.lightDevices[arrayIndices].extra2.bleCode));"
+          "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extraTwo && (model.lightDevices[arrayIndices].extraTwo.sceneCode || model.lightDevices[arrayIndices].extraTwo.bleCode));"
         }
       }
     }
   },
-  "extra3": {
+  "extraThree": {
     "title": "Extra 3",
     "type": "object",
     "properties": {
@@ -126,12 +126,12 @@
           }
         ],
         "condition": {
-          "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extra3 && (model.lightDevices[arrayIndices].extra3.sceneCode || model.lightDevices[arrayIndices].extra3.bleCode));"
+          "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extraThree && (model.lightDevices[arrayIndices].extraThree.sceneCode || model.lightDevices[arrayIndices].extraThree.bleCode));"
         }
       }
     }
   },
-  "extra4": {
+  "extraFour": {
     "title": "Extra 4",
     "type": "object",
     "properties": {
@@ -170,12 +170,12 @@
           }
         ],
         "condition": {
-          "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extra4 && (model.lightDevices[arrayIndices].extra4.sceneCode || model.lightDevices[arrayIndices].extra4.bleCode));"
+          "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extraFour && (model.lightDevices[arrayIndices].extraFour.sceneCode || model.lightDevices[arrayIndices].extraFour.bleCode));"
         }
       }
     }
   },
-  "extra5": {
+  "extraFive": {
     "title": "Extra 5",
     "type": "object",
     "properties": {
@@ -214,12 +214,12 @@
           }
         ],
         "condition": {
-          "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extra5 && (model.lightDevices[arrayIndices].extra5.sceneCode || model.lightDevices[arrayIndices].extra5.bleCode));"
+          "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extraFive && (model.lightDevices[arrayIndices].extraFive.sceneCode || model.lightDevices[arrayIndices].extraFive.bleCode));"
         }
       }
     }
   },
-  "extra6": {
+  "extraSix": {
     "title": "Extra 6",
     "type": "object",
     "properties": {
@@ -258,12 +258,12 @@
           }
         ],
         "condition": {
-          "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extra6 && (model.lightDevices[arrayIndices].extra6.sceneCode || model.lightDevices[arrayIndices].extra6.bleCode));"
+          "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extraSix && (model.lightDevices[arrayIndices].extraSix.sceneCode || model.lightDevices[arrayIndices].extraSix.bleCode));"
         }
       }
     }
   },
-  "extra7": {
+  "extraSeven": {
     "title": "Extra 7",
     "type": "object",
     "properties": {
@@ -302,12 +302,12 @@
           }
         ],
         "condition": {
-          "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extra7 && (model.lightDevices[arrayIndices].extra7.sceneCode || model.lightDevices[arrayIndices].extra7.bleCode));"
+          "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extraSeven && (model.lightDevices[arrayIndices].extraSeven.sceneCode || model.lightDevices[arrayIndices].extraSeven.bleCode));"
         }
       }
     }
   },
-  "extra8": {
+  "extraEight": {
     "title": "Extra 8",
     "type": "object",
     "properties": {
@@ -346,12 +346,12 @@
           }
         ],
         "condition": {
-          "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extra8 && (model.lightDevices[arrayIndices].extra8.sceneCode || model.lightDevices[arrayIndices].extra8.bleCode));"
+          "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extraEight && (model.lightDevices[arrayIndices].extraEight.sceneCode || model.lightDevices[arrayIndices].extraEight.bleCode));"
         }
       }
     }
   },
-  "extra9": {
+  "extraNine": {
     "title": "Extra 9",
     "type": "object",
     "properties": {
@@ -390,12 +390,12 @@
           }
         ],
         "condition": {
-          "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extra9 && (model.lightDevices[arrayIndices].extra9.sceneCode || model.lightDevices[arrayIndices].extra9.bleCode));"
+          "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extraNine && (model.lightDevices[arrayIndices].extraNine.sceneCode || model.lightDevices[arrayIndices].extraNine.bleCode));"
         }
       }
     }
   },
-  "extra10": {
+  "extraTen": {
     "title": "Extra 10",
     "type": "object",
     "properties": {
@@ -434,7 +434,7 @@
           }
         ],
         "condition": {
-          "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extra10 && (model.lightDevices[arrayIndices].extra10.sceneCode || model.lightDevices[arrayIndices].extra10.bleCode));"
+          "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extraTen && (model.lightDevices[arrayIndices].extraTen.sceneCode || model.lightDevices[arrayIndices].extraTen.bleCode));"
         }
       }
     }
