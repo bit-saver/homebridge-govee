@@ -1799,6 +1799,446 @@
                   }
                 }
               }
+            },
+            "extraTwentyOne": {
+              "title": "Extra 21",
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Extra 21 (AWS): Scene Code",
+                  "type": "string",
+                  "description": "Enter a scene code from the logs to create a button named 'Extra 21' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "Extra 21 (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "Extra 21: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extraTwentyOne && (model.lightDevices[arrayIndices].extraTwentyOne.sceneCode || model.lightDevices[arrayIndices].extraTwentyOne.bleCode));"
+                  }
+                }
+              }
+            },
+            "extraTwentyTwo": {
+              "title": "Extra 22",
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Extra 22 (AWS): Scene Code",
+                  "type": "string",
+                  "description": "Enter a scene code from the logs to create a button named 'Extra 22' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "Extra 22 (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "Extra 22: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extraTwentyTwo && (model.lightDevices[arrayIndices].extraTwentyTwo.sceneCode || model.lightDevices[arrayIndices].extraTwentyTwo.bleCode));"
+                  }
+                }
+              }
+            },
+            "extraTwentyThree": {
+              "title": "Extra 23",
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Extra 23 (AWS): Scene Code",
+                  "type": "string",
+                  "description": "Enter a scene code from the logs to create a button named 'Extra 23' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "Extra 23 (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "Extra 23: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extraTwentyThree && (model.lightDevices[arrayIndices].extraTwentyThree.sceneCode || model.lightDevices[arrayIndices].extraTwentyThree.bleCode));"
+                  }
+                }
+              }
+            },
+            "extraTwentyFour": {
+              "title": "Extra 24",
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Extra 24 (AWS): Scene Code",
+                  "type": "string",
+                  "description": "Enter a scene code from the logs to create a button named 'Extra 24' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "Extra 24 (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "Extra 24: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extraTwentyFour && (model.lightDevices[arrayIndices].extraTwentyFour.sceneCode || model.lightDevices[arrayIndices].extraTwentyFour.bleCode));"
+                  }
+                }
+              }
+            },
+            "extraTwentyFive": {
+              "title": "Extra 25",
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Extra 25 (AWS): Scene Code",
+                  "type": "string",
+                  "description": "Enter a scene code from the logs to create a button named 'Extra 25' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "Extra 25 (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "Extra 25: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extraTwentyFive && (model.lightDevices[arrayIndices].extraTwentyFive.sceneCode || model.lightDevices[arrayIndices].extraTwentyFive.bleCode));"
+                  }
+                }
+              }
+            },
+            "extraTwentySix": {
+              "title": "Extra 26",
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Extra 26 (AWS): Scene Code",
+                  "type": "string",
+                  "description": "Enter a scene code from the logs to create a button named 'Extra 26' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "Extra 26 (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "Extra 26: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extraTwentySix && (model.lightDevices[arrayIndices].extraTwentySix.sceneCode || model.lightDevices[arrayIndices].extraTwentySix.bleCode));"
+                  }
+                }
+              }
+            },
+            "extraTwentySeven": {
+              "title": "Extra 27",
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Extra 27 (AWS): Scene Code",
+                  "type": "string",
+                  "description": "Enter a scene code from the logs to create a button named 'Extra 27' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "Extra 27 (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "Extra 27: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extraTwentySeven && (model.lightDevices[arrayIndices].extraTwentySeven.sceneCode || model.lightDevices[arrayIndices].extraTwentySeven.bleCode));"
+                  }
+                }
+              }
+            },
+            "extraTwentyEight": {
+              "title": "Extra 28",
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Extra 28 (AWS): Scene Code",
+                  "type": "string",
+                  "description": "Enter a scene code from the logs to create a button named 'Extra 28' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "Extra 28 (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "Extra 28: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extraTwentyEight && (model.lightDevices[arrayIndices].extraTwentyEight.sceneCode || model.lightDevices[arrayIndices].extraTwentyEight.bleCode));"
+                  }
+                }
+              }
+            },
+            "extraTwentyNine": {
+              "title": "Extra 29",
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Extra 29 (AWS): Scene Code",
+                  "type": "string",
+                  "description": "Enter a scene code from the logs to create a button named 'Extra 29' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "Extra 29 (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "Extra 29: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extraTwentyNine && (model.lightDevices[arrayIndices].extraTwentyNine.sceneCode || model.lightDevices[arrayIndices].extraTwentyNine.bleCode));"
+                  }
+                }
+              }
+            },
+            "extraThirty": {
+              "title": "Extra 30",
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Extra 30 (AWS): Scene Code",
+                  "type": "string",
+                  "description": "Enter a scene code from the logs to create a button named 'Extra 30' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "Extra 30 (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "Extra 30: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extraThirty && (model.lightDevices[arrayIndices].extraThirty.sceneCode || model.lightDevices[arrayIndices].extraThirty.bleCode));"
+                  }
+                }
+              }
             }
           }
         }
