@@ -1580,7 +1580,7 @@
                 }
               }
             },
-            "extraSixten": {
+            "extraSixteen": {
               "title": "Extra 16",
               "type": "object",
               "properties": {
@@ -1619,7 +1619,7 @@
                     }
                   ],
                   "condition": {
-                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extraSixten && (model.lightDevices[arrayIndices].extraSixten.sceneCode || model.lightDevices[arrayIndices].extraSixten.bleCode));"
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extraSixteen && (model.lightDevices[arrayIndices].extraSixteen.sceneCode || model.lightDevices[arrayIndices].extraSixteen.bleCode));"
                   }
                 }
               }
