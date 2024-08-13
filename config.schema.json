@@ -2239,6 +2239,50 @@
                   }
                 }
               }
+            },
+            "extraThirtyOne": {
+              "title": "Extra 31",
+              "type": "object",
+              "properties": {
+                "sceneCode": {
+                  "title": "Extra 31 (AWS): Scene Code",
+                  "type": "string",
+                  "description": "Enter a scene code from the logs to create a button named 'Extra 31' (in Eve app).",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "bleCode": {
+                  "title": "Extra 31 (BLE): Scene Code",
+                  "type": "string",
+                  "description": "Can be (1) left blank, (2) used instead of, or (3) used along with the above AWS code. In the case of (3) please make sure both codes correspond to the same Govee mode.",
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice);"
+                  }
+                },
+                "showAs": {
+                  "type": "string",
+                  "title": "Extra 31: Show As",
+                  "description": "Change this setting to Accessory Switch to show this as an extra switch in the Home app.",
+                  "oneOf": [
+                    {
+                      "title": "Eve Switch (Default)",
+                      "enum": [
+                        "default"
+                      ]
+                    },
+                    {
+                      "title": "Accessory Switch",
+                      "enum": [
+                        "switch"
+                      ]
+                    }
+                  ],
+                  "condition": {
+                    "functionBody": "return (model.lightDevices && model.lightDevices[arrayIndices] && model.lightDevices[arrayIndices].deviceId && model.lightDevices[arrayIndices].deviceId.length === 23 && !['switch'].includes(model.lightDevices[arrayIndices].showAs) && !model.lightDevices[arrayIndices].ignoreDevice && model.lightDevices[arrayIndices].extraThirtyOne && (model.lightDevices[arrayIndices].extraThirtyOne.sceneCode || model.lightDevices[arrayIndices].extraThirtyOne.bleCode));"
+                  }
+                }
+              }
             }
           }
         }
